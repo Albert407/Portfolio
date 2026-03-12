@@ -269,6 +269,22 @@
       .project-card.featured { grid-column: span 1; }
       .form-row { grid-template-columns: 1fr; }
     }
+
+    @media (max-width: 450px) {
+      .about-img-main { width: 95%;}
+      .about-img-accent { width: 40%}
+    }
+
+    @media (max-width: 370px) {
+      .about-img-main { width: 89%;}
+      .about-img-accent { right: -9px;}
+      .stats-bar, .skills-grid{width: 300px; align-items: center; justify-content: center;}
+    }
+
+    @media (max-width: 355px) {
+      .about-img-main { width: 230px; height: 220px;}
+      .about-img-accent { width: 120px; height: 120px; right: 30px;}
+    }
   </style>
 </head>
 <body>
