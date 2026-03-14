@@ -557,17 +557,17 @@
       </div>
     </div>
     <div class="contact-form-wrap reveal reveal-d2">
-      <div id="contactForm">
+      <form action="https://formspree.io/f/mvzwrjqb" method="POST" id="contactForm">
         <div class="cform-title">Send a message</div>
         <div class="form-row">
-          <div class="form-group"><label class="form-label">First Name</label><input type="text" class="form-input" placeholder="John" id="cFirst"/></div>
-          <div class="form-group"><label class="form-label">Last Name</label><input type="text" class="form-input" placeholder="Doe" id="cLast"/></div>
+          <div class="form-group"><label class="form-label">First Name</label><input type="text" name="FirstName" class="form-input" placeholder="John" id="cFirst"/></div>
+          <div class="form-group"><label class="form-label">Last Name</label><input type="text" name="LastName" class="form-input" placeholder="Doe" id="cLast"/></div>
         </div>
-        <div class="form-group"><label class="form-label">Email</label><input type="email" class="form-input" placeholder="john@example.com" id="cEmail"/></div>
-        <div class="form-group"><label class="form-label">Subject</label><input type="text" class="form-input" placeholder="Project enquiry, collaboration..." id="cSubj"/></div>
-        <div class="form-group"><label class="form-label">Message</label><textarea class="form-textarea" placeholder="Tell us about your project..." id="cMsg"></textarea></div>
-        <button class="send-btn" onclick="sendMsg()">Send Message →</button>
-      </div>
+        <div class="form-group"><label class="form-label">Email</label><input type="email" name="Email" class="form-input" placeholder="john@example.com" id="cEmail"/></div>
+        <div class="form-group"><label class="form-label">Subject</label><input type="text" name="Subject" class="form-input" placeholder="Project enquiry, collaboration..." id="cSubj"/></div>
+        <div class="form-group"><label class="form-label">Message</label><textarea name="Message" class="form-textarea" placeholder="Tell us about your project..." id="cMsg"></textarea></div>
+        <button class="send-btn" type="submit">Send Message →</button>
+      </form>
       <div class="form-success" id="formSuccess">✓ Message sent! we'll be in touch soon.</div>
     </div>
   </div>
